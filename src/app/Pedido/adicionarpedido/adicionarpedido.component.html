@@ -1,0 +1,71 @@
+<!--FORMULARIO DE ADIÇÃO DE PEDIDO -->
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h4>CADASTRO DE PEDIDO</h4>
+        </div>
+        <div class="card-body">
+            <form action="" [formGroup]="formulario">         
+                 <div class="form-row"> 
+                    <div class="form-group">     
+                     <label for="">CLIENTE</label>
+                     <select class="form-control" id="cliente" formControlName="cliente" style="background-color: lightblue;">
+                        <option *ngFor="let cliente of clientes" [ngValue]="cliente">
+                            {{cliente.nome}}
+                            </option>
+                       </select>
+                     </div>
+                <br>     
+                <br>
+                <div class="form-group">     
+                    <label for="">VALOR TOTAL</label>
+                         <input id="totalDaCompra" formControlName="totalDaCompra" class="form-control"
+                         placeholder="$ 0.0" style="background-color: lightblue;">
+                    </div>
+               <br>     
+               <br>
+                    <div class="form-group">   
+                        <label for="dataCompra">DATA DA COMPRA  </label>
+                        <input type="date" id="dataCompra" formControlName="dataCompra" 
+                        placeholder="yyyy/MM/dd hh:mm" required  style="background-color: lightblue;"
+                        />
+                      </div>
+               <br>
+               <br>
+                <div class="form-group">     
+                    <label for="">PRODUTOS</label>
+                      <div class="textoprojeto">
+                        <h4>SELECIONE PRODUTO</h4>
+                      </div>
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="text-align: center; background-color: green; color: honeydew;"> NOME</th>
+                            <th scope="col"style="text-align: center; background-color: green; color: honeydew;">PREÇO</th>
+                            <th scope="col"style="text-align: center; background-color: green; color: honeydew;">QUANTIDADE</th>
+                            <th scope="col"style="text-align: center; background-color: green; color: honeydew;">SELECIONAR</th>
+                          </tr>
+                        </thead>
+                      <tbody>
+                          <tr *ngFor="let produto of produtos" class="text-center">
+                              <td>{{produto.nome}}</td>
+                              <td>{{produto.preco}}</td>
+                              <td>{{produto.quantidade}}</td>
+                              <td>
+                              <input type="checkbox" (click)="showInfo(produto)" />
+                              </td>
+                          </tr>
+                      </tbody>
+                </table>
+
+                    </div>
+               <br>  
+                <div class="botao">
+                    <button (click)="OnSubmit()" class="btn btn-danger">CADASTRAR</button>
+               </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+

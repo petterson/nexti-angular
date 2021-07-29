@@ -1,0 +1,42 @@
+<!--FORMULARIO USADO PARA LISTAR PEDIDO-->
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4>LISTA PEDIDOS</h4>
+        </div>
+        <div class="car-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="text-align: center; background-color: green; color: honeydew;"> ID</th>
+                        <th scope="col"style="text-align: center; background-color: green; color: honeydew;">CLIENTE</th>
+                        <th scope="col"style="text-align: center; background-color: green; color: honeydew;">VALOR TOTAL</th>
+                        <th scope="col"style="text-align: center; background-color: green; color: honeydew;">DATA COMPRA</th>
+                        <th scope="col"style="text-align: center; background-color: green; color: honeydew;">PRODUTOS</th>
+                        <th scope="col"style="text-align: center; background-color: green; color: honeydew;">AÇÃO</th>
+                      </tr>
+                    </thead>
+                  <tbody>
+                      <tr *ngFor="let pedido of pedidos" class="text-center">
+                          <td>{{pedido.id}}</td>
+                          <td>{{pedido.cliente.nome}}</td>
+                          <td>{{pedido.totalDaCompra}}</td>
+                          <td>{{pedido.dataCompra}}</td>
+                          <td><tr *ngFor="let produto of pedido.produtos" class="text-center">
+                               {{produto.nome}}
+                          </tr></td>
+                          <td>
+                          <button (click)="Atualizar(pedido)" class="btn btn-warning">Editar</button>
+                          <button (click)="Delete(pedido)" class="btn btn-danger" style="margin-left: 5px;">Delete</button>
+                          </td>
+                      </tr>
+                  </tbody>
+            </table>
+        </div>
+        <div class="botao">
+            <button (click)="Listar()" class="btn btn-info">Listar</button>
+       </div>
+    </div>
+</div>
+
+

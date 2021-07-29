@@ -1,0 +1,85 @@
+.container {
+    background-color: darkgray;
+}
+
+.card-header{
+    background: chartreuse;
+}
+
+.card-header h4{
+    margin-top: 10px;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-body{
+    background-color: darkgrey;
+}
+
+.botao {
+    margin-top: 20px;
+     margin-left: 250px;
+     height: 60px;
+     width: 300px;
+     text-align: center;
+     /*display: block;*/
+ }
+  
+ .botao button {
+    background-color: #4CAF50; /* Green */
+    border: 5px solid blue;
+    margin-top: 6px;
+    margin-left: 20px;
+    background-color: #FFC50C;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+  }
+
+ .botao button:hover {
+    color: black;
+    background: chartreuse;
+  }
+
+  .btn-group{
+    margin-top: 20px;
+    margin-left: 150px;
+   text-align: center;
+  }
+
+  .btn-group button {
+    background-color: chartreuse; /* Green */
+    color: blue;
+    border: 5px solid blue;
+    margin-top: 6px;
+    margin-left: 50px;
+    /*background-color: #FFC50C;*/
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+  }
+
+  .btn-group button:hover {
+    color: black;
+    background: #4CAF50;
+  }
+
+  .textoprojeto{
+      margin-top: 30px;
+      color: aliceblue;
+      text-align: center;
+      background: green;
+      height: 30px;
+  }
+
+  .contenbotao {
+      margin-left: 50px;
+      display: inline-block;
+  }

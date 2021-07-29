@@ -1,0 +1,44 @@
+<!--FORMULARIO DE ADIÇÃO DE CLIENTE E [formGroup] É A TAG QUE DE RUIM-->
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h4>CADASTRO DE PRODUTO</h4>
+        </div>
+        <div class="card-body">
+            <form action="" [formGroup]="formulario">         
+                 <div class="form-row"> 
+                    <div class="form-group">     
+                     <label for="">Nome</label>
+                          <input id="nome" formControlName="nome" type="text" class="form-control" style="background-color: lightblue;">
+                     </div>
+                <br>     
+                <br>
+                     <div class="form-group">   
+                        <label for="">Descrição</label>
+                        <input id="descricao" formControlName="descricao" type="text" class="form-control" style="background-color: lightblue;">
+                     </div>
+                <br>
+                <br>
+                <div class="form-group">     
+                    <label for="">Preço</label>
+                         <input id="preco" formControlName="preco" class="form-control" style="background-color: lightblue;">
+                    </div>
+               <br>     
+               <br>
+                    <div class="form-group">   
+                       <label for="">Quantidade</label>
+                       <input id="quantidade" formControlName="quantidade" class="form-control" style="background-color: lightblue;">
+                    </div>
+               <br>
+                <div class="botao">
+                    <!--<button type="submit" class="btn btn-primary">Cadastrar</button>-->
+                    <button (click)="OnSubmit()" class="btn btn-danger">CADASTRAR</button>
+               </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

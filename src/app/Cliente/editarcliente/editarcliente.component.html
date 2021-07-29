@@ -1,0 +1,37 @@
+<!--FORMULARIO DE ATUALIZAÇÃO DE CLIENTE-->
+<div class="container col-md-10">
+    <div class="card">
+        <div class="card-header">
+            <h4>Atualizar Cliente</h4>
+        </div>
+        <div class="card-body">
+            <form action="" [formGroup]="formulario">         
+                 <div class="form-row"> 
+                    <div class="form-group">     
+                     <label for="">Nome</label>
+                          <input id="nome" formControlName="nome" type="text" class="form-control" style="background-color: lightblue;">
+                     </div>
+                <br>     
+                <br>
+                     <div class="form-group">   
+                        <label for="">CPF</label>
+                        <input id="cpf" formControlName="cpf" type="text" class="form-control" style="background-color: lightblue;">
+                     </div>
+                <br>
+                <br>
+                   <div class="form-group">
+                    <label for="dataNascimento">DATA Nascimento</label>
+                      <input type="date" id="dataNascimento" formControlName="dataNascimento" value="2018-03-17" 
+                        placeholder="yyyy-MM-dd" required  style="background-color: lightblue;"/>
+                    </div>
+                <div class="botao">
+                    <button (click)="OnSubmit()" class="btn btn-danger">ATUALIZAR</button>
+               </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

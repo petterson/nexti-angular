@@ -1,0 +1,47 @@
+.container {
+    background-color: white;
+}
+
+.card-header{
+    background: chartreuse;
+}
+
+.card-header h4{
+    margin-top: 10px;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+ .botao {
+    margin-top: 20px;
+     margin-left: 350px;
+     height: 60px;
+     width: 300px;
+     text-align: center;
+     display: block;
+ }
+  
+ .botao button {
+    background-color: #4CAF50; /* Green */
+    border: 5px solid blue;
+    margin-top: 6px;
+    margin-left: 20px;
+    background-color: #FFC50C;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+ .botao button:hover {
+    
+    color: black;
+    background: chartreuse;
+  }
+
+  .table table-bordered td{
+      background-color: chartreuse;
+  }
