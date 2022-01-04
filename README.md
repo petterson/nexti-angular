@@ -2,8 +2,10 @@
 front-end Angular
 
 Então, no fornt-end utilizei node.js angular-cli 12, bootstrap 5:
-Vale ressaltar que utilizei angular apenas em 2017, na universidade, onde fiz um trabalho.
+Vale ressaltar que tinha utilizado angular apenas em 2017, na universidade, onde fiz um trabalho.
 E a arquitetura ficou assim:
+
+Atualmente tenho experiência de 2 anos.
 
 Model: Cliente, Produto, Pedido
 
